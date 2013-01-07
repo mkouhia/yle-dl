@@ -1,7 +1,7 @@
 rtmpdump frontend for Yle servers
 Copyright (C) 2010-2012 Antti Ajanki
 License: GPLv2
-Homepage: http://www.iki.fi/aoa/rtmpdump-yle
+Homepage: http://aajanki.github.com/yle-dl/index-en.html
 Source code: https://github.com/aajanki/yle-dl
 
 yle-dl is a rtmpdump frontend for downloading media files from the
@@ -12,11 +12,14 @@ and Elävä Arkisto (http://www.yle.fi/elavaarkisto/).
 Installation
 ------------
 
-Install prerequisites: rtmpdump (version 2.4 or newer), python and
+Install dependencies: rtmpdump (version 2.4 or newer), python and
 pycrypto.
 
 On Debian/Ubuntu installing packages rtmpdump, python and
 python-pycrypto satisfies the dependencies.
+
+On OS X install rtmpdump with homebrew: ``brew install --HEAD
+rtmpdump`` and pycrypto with pip: ``pip install -r requirements.txt``
 
 To install run:
 
@@ -49,10 +52,6 @@ yle-dl options:
 --destdir dir     Save files to dir
 
 Type "rtmpdump --help" to see a full list of options.
-
-When downloading from outside Finland, it may be necessary to add "-n
-flashu.yle.fi" on the command line. Note that not all videos are
-available outside Finland.
 
 Firewall must allow outgoing traffic on ports 80 and 1935.
 
